@@ -133,15 +133,10 @@ h2 em{color:var(--amber);font-style:italic}
 .lv{position:absolute;left:14px;bottom:14px;z-index:4;padding:9px 14px;border-radius:40px;background:rgba(29,20,12,.88);color:var(--gold);font-size:11px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;border:1px solid rgba(244,217,160,.3)}
 
 /* ---- who we are ---- */
-#st .stick{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr) minmax(0,.6fr);gap:4vw;align-items:center;padding:0 7vw}
+#st .stick{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr) minmax(0,.7fr);gap:4vw;align-items:start;align-content:start;padding:17vh 7vw 0}
 #st .stick:after{display:none}
 #st .sh{font-family:var(--serif);font-weight:500;font-size:clamp(36px,4.6vw,74px);line-height:1;max-width:6em}
 #st p{font-size:clamp(24px,2.7vw,44px);line-height:1.25;max-width:none}
-.vine{height:88vh;width:100%;overflow:visible;justify-self:end}
-.vine path{fill:none;stroke:rgba(244,217,160,.6);stroke-width:1.7;stroke-linecap:round}
-.vine #vk path{fill:var(--amber);stroke:none}
-.vine #vc{fill:var(--gold);stroke:var(--deep);stroke-width:1.2;stroke-linejoin:round;opacity:0}
-@media(max-width:760px){#st .stick{grid-template-columns:1fr;align-content:center;gap:4vh;position:sticky}.vine{position:absolute;right:-8vw;top:6vh;height:88vh;width:46vw;opacity:.38;z-index:0}#st .sh,#st p{position:relative;z-index:1}#st p{font-size:25px}}
 /* ---- work: portal ---- */
 #wk .stick{display:flex;align-items:center}
 .wkg{width:100%;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr);gap:3vw;align-items:center;padding:0 7vw}
@@ -167,6 +162,14 @@ h2 em{color:var(--amber);font-style:italic}
 .pl iframe{position:absolute;left:0;top:0;border:0;background:#fff;transform-origin:0 0;pointer-events:none;z-index:2;display:none}
 .disc.live .pl iframe{display:block}
 @media(max-width:760px){.wkg{grid-template-columns:1fr;gap:3vh;padding:0 7vw}.wkr{order:-1}.pt{width:min(60vw,31vh)}.nl{font-size:25px}#wk h2{font-size:30px;margin-bottom:1.5vh}.info{min-height:120px;margin-top:2vh}.nl li{padding-left:.9em}}
+
+.gl{position:absolute;left:7vw;right:7vw;bottom:13vh;height:2px;background:linear-gradient(90deg,var(--amber),var(--gold));transform-origin:left;transform:scaleX(0);box-shadow:0 0 14px rgba(200,121,47,.6)}
+.cat{position:absolute;right:9vw;bottom:calc(13vh + 1px);height:51vh;width:auto;overflow:visible;pointer-events:none}
+.cat .cp{fill:none;stroke:rgba(244,217,160,.85);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.cat #ey ellipse{fill:var(--amber);transform-box:fill-box;transform-origin:center;transform:scale(0);filter:drop-shadow(0 0 7px var(--amber))}
+.cat #sp{fill:var(--gold);transform-box:fill-box;transform-origin:center;transform:scale(0);filter:drop-shadow(0 0 8px var(--amber))}
+.cat #vc{fill:var(--gold);stroke:var(--deep);stroke-width:1.2;stroke-linejoin:round;opacity:0}
+@media(max-width:760px){#st .stick{grid-template-columns:1fr;gap:3vh;padding:13vh 7vw 0}.gl{bottom:7vh}.cat{height:33vh;right:5vw;bottom:calc(7vh + 1px)}#st p{font-size:24px}}
 </style></head><body>
 <div id="bar"></div>
 <nav id="nav"><b>DTE</b><span><a href="#svc">Services</a><a href="#wk">Work</a><a href="#end">Contact</a></span></nav>
@@ -180,7 +183,16 @@ h2 em{color:var(--amber);font-style:italic}
 <section class="pin" id="st"><div class="stick">
 <h2 class="sh">Not another template.</h2>
 <p id="stp">We make websites and GitHub profiles that don’t look like anyone else’s, because the people behind them don’t either. <span class="a">Be seen. Be remembered. Exist.</span></p>
-<svg class="vine" id="vn" viewBox="0 0 300 800" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path id="vs" d="M150 790 C100 720 200 660 150 590 S100 470 150 400 S200 280 150 210 S110 120 150 90 C175 70 215 60 225 95 C232 125 200 135 190 115"/><g id="vb"></g><g id="vk"></g><path id="vc" d="M0 0 L0 17 L4.6 13 L7.6 20 L10.2 18.9 L7.2 12 L13 12 Z"/></svg>
+<div class="gl" id="gl"></div>
+<svg class="cat" id="cat" viewBox="0 0 420 485" aria-hidden="true">
+<path class="cp" d="M172 250C250 262 332 322 332 412C332 452 318 481 282 481L148 481C137 481 137 467 141 457C148 402 150 344 172 298"/>
+<path class="cp" d="M118 178L112 120L150 150C162 146 182 146 194 150L232 120L226 178C240 210 222 262 172 264C122 264 104 210 118 178Z"/>
+<path class="cp" d="M326 462C372 466 404 430 394 372C386 326 410 296 394 252C384 226 356 232 362 254"/>
+<path class="cp" d="M172 226L172 234M172 234C165 243 156 241 152 236M172 234C179 243 188 241 192 236M130 224L88 214M130 233L86 234M133 242L92 256M214 224L256 214M214 233L258 234M211 242L252 256"/>
+<g id="ey"><ellipse cx="146" cy="200" rx="8" ry="9"/><ellipse cx="198" cy="200" rx="8" ry="9"/></g>
+<g transform="translate(398 196)"><path id="sp" d="M0-22Q2.5-2.5 22 0Q2.5 2.5 0 22Q-2.5 2.5-22 0Q-2.5-2.5 0-22Z"/></g>
+<path id="vc" d="M0 0L0 17L4.6 13L7.6 20L10.2 18.9L7.2 12L13 12Z"/>
+</svg>
 </div></section>
 <section class="pin" id="svc"><div class="stick">
 <div class="card"><span class="n">01 / SERVICE</span><div><h3>Portfolio<br><em>Websites</em></h3><p style="margin-top:18px">Animated, scroll-driven sites with your story and projects, built around you.</p></div><div class="art"><div class="mk"><i></i><i></i><i></i><div class="bx"></div></div></div><div class="shade"></div></div>
@@ -211,14 +223,14 @@ var cl=function(v){return Math.max(0,Math.min(1,v))};
 function prog(el){var r=el.getBoundingClientRect();return cl(-r.top/(r.height-innerHeight))}
 var sp=$('stp'),words=[];(function(){var out=[];sp.childNodes.forEach(function(n){var cls=n.nodeType==3?'':n.className;n.textContent.split(/\s+/).filter(Boolean).forEach(function(w){var s=document.createElement('span');if(cls)s.className=cls;s.textContent=w+' ';out.push(s)})});sp.innerHTML='';out.forEach(function(s){sp.appendChild(s)});words=out})();
 
-/* ---- self-drawing line in "Who we are" ---- */
-var vs=$('vs'),vb=$('vb'),vk=$('vk'),vc=$('vc'),vl=vs.getTotalLength(),NS='http://www.w3.org/2000/svg',br=[];
-vs.style.strokeDasharray=vl;vs.style.strokeDashoffset=vl;
-[.12,.22,.32,.42,.52,.62,.72].forEach(function(t,i){var P=vs.getPointAtLength(t*vl),sd=i%2?1:-1,len=64+(i%3)*10,ex=P.x+sd*len,ey=P.y-62-(i%2)*10;
-var d=document.createElementNS(NS,'path');d.setAttribute('d','M'+P.x+' '+P.y+' Q'+(P.x+sd*8)+' '+(P.y-48)+' '+ex+' '+ey);vb.appendChild(d);var L=d.getTotalLength();d.style.strokeDasharray=L;d.style.strokeDashoffset=L;
-var g=document.createElementNS(NS,'g');g.setAttribute('transform','translate('+ex+' '+ey+')');var st=document.createElementNS(NS,'path');st.setAttribute('d','M0-20Q2-2 20 0Q2 2 0 20Q-2 2-20 0Q-2-2 0-20Z');st.style.transformBox='fill-box';st.style.transformOrigin='center';st.style.transform='scale(0)';g.appendChild(st);vk.appendChild(g);br.push({t:t,d:d,L:L,s:st})});
-function vine(p){var d=cl(p*1.25);vs.style.strokeDashoffset=vl*(1-d);var pt=vs.getPointAtLength(d*vl);vc.setAttribute('transform','translate('+(pt.x-1)+' '+(pt.y-1)+')');vc.style.opacity=d>.005?1:0;
-br.forEach(function(b){var k=cl((d-b.t)/.12);b.d.style.strokeDashoffset=b.L*(1-k);b.s.style.transform='scale('+cl((d-b.t-.1)/.05)+') rotate('+(cl((d-b.t-.1)/.05)*45)+'deg)'})}
+/* ---- a cursor draws the DTE cat ---- */
+var cps=[].slice.call(document.querySelectorAll('.cat .cp')),gl=$('gl'),vc=$('vc'),eys=document.querySelectorAll('#ey ellipse'),spk=$('sp'),
+cw=[[.1,.3],[.3,.5],[.5,.7],[.7,.86]],cL=cps.map(function(e){var l=e.getTotalLength();e.style.strokeDasharray=l;e.style.strokeDashoffset=l;return l});
+function vine(p){var d=cl(p*1.2);gl.style.transform='scaleX('+cl(d/.1)+')';var tip=null;
+cps.forEach(function(e,i){var k=cl((d-cw[i][0])/(cw[i][1]-cw[i][0]));e.style.strokeDashoffset=cL[i]*(1-k);if(k>0&&(k<1||i==cps.length-1||d<cw[i+1][0]))tip=e.getPointAtLength(k*cL[i])});
+if(d>=.7)tip=cps[2].getPointAtLength(cL[2]);
+if(tip){vc.setAttribute('transform','translate('+(tip.x-1)+' '+(tip.y-1)+')');vc.style.opacity=1}else vc.style.opacity=0;
+var ke=cl((d-.88)/.06);eys.forEach(function(e){e.style.transform='scale('+ke+')'});var ks=cl((d-.94)/.06);spk.style.transform='scale('+ks+') rotate('+ks*90+'deg)'}
 /* ---- work: one circular lens, sites swap with a wipe ---- */
 var PJ=[{n:'Marlo Reyes',u:'https://designed-to-exist.netlify.app/',t:'Portfolio · Scroll dive · Sound',d:'Illustrator’s portfolio that you dive through, from sunlit surface to the deep.'},
 {n:'The Night Market of Lost Things',u:'https://night-market-dte.vercel.app/',t:'Experience · Walkable · Sound',d:'Walk through a lantern-lit market by scrolling, swiping or pressing W and S.'},
