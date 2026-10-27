@@ -163,13 +163,28 @@ h2 em{color:var(--amber);font-style:italic}
 .disc.live .pl iframe{display:block}
 @media(max-width:760px){.wkg{grid-template-columns:1fr;gap:3vh;padding:0 7vw}.wkr{order:-1}.pt{width:min(60vw,31vh)}.nl{font-size:25px}#wk h2{font-size:30px;margin-bottom:1.5vh}.info{min-height:120px;margin-top:2vh}.nl li{padding-left:.9em}}
 
-.gl{position:absolute;left:7vw;right:7vw;bottom:13vh;height:2px;background:linear-gradient(90deg,var(--amber),var(--gold));transform-origin:left;transform:scaleX(0);box-shadow:0 0 14px rgba(200,121,47,.6)}
-.cat{position:absolute;right:9vw;bottom:calc(13vh + 1px);height:51vh;width:auto;overflow:visible;pointer-events:none}
-.cat .cp{fill:none;stroke:rgba(244,217,160,.85);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.cat #ey ellipse{fill:var(--amber);transform-box:fill-box;transform-origin:center;transform:scale(0);filter:drop-shadow(0 0 7px var(--amber))}
-.cat #sp{fill:var(--gold);transform-box:fill-box;transform-origin:center;transform:scale(0);filter:drop-shadow(0 0 8px var(--amber))}
-.cat #vc{fill:var(--gold);stroke:var(--deep);stroke-width:1.2;stroke-linejoin:round;opacity:0}
-@media(max-width:760px){#st .stick{grid-template-columns:1fr;gap:3vh;padding:13vh 7vw 0}.gl{bottom:7vh}.cat{height:33vh;right:5vw;bottom:calc(7vh + 1px)}#st p{font-size:24px}}
+
+#st .stick{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:5vw;align-items:center;align-content:center;padding:0 7vw}
+#st .sh{max-width:8em;margin-bottom:4vh}#st p{font-size:clamp(22px,2.4vw,40px)}
+.art{width:100%;height:auto;max-height:74vh;overflow:visible;pointer-events:none}
+.art .cp{fill:none;stroke:rgba(244,217,160,.88);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.art .bar{stroke-width:7;stroke:rgba(244,217,160,.6)}
+.art #bf{fill:var(--amber);opacity:0;filter:drop-shadow(0 0 12px rgba(200,121,47,.7))}
+.art #sk path{fill:var(--gold);filter:drop-shadow(0 0 8px var(--amber))}
+.art #sk{transform-box:fill-box}
+.art #ca{fill:var(--gold);stroke:var(--deep);stroke-width:2;stroke-linejoin:round}
+.art #cu{opacity:0}
+.art #rk{fill:none;stroke:var(--amber);stroke-width:3;stroke-linecap:round}
+.art #vd{fill:var(--gold);filter:drop-shadow(0 0 8px var(--amber));opacity:0}
+@media(max-width:760px){#st .stick{grid-template-columns:1fr;gap:3vh;padding:11vh 7vw 0;align-content:start}.art{max-height:38vh}#st p{font-size:22px}#st .sh{font-size:32px;margin-bottom:2vh}}
+
+#st .stick{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:6vw}
+#st .art{order:-1;max-height:52vh;justify-self:start}
+@media(max-width:760px){#st .stick{grid-template-columns:1fr}#st .art{order:0;max-height:30vh;justify-self:center}}
+
+#st .sh{font-size:clamp(40px,5vw,84px);max-width:8em}
+#st p{font-size:clamp(25px,2.9vw,48px)}
+@media(max-width:760px){#st .sh{font-size:34px}#st p{font-size:23px}}
 </style></head><body>
 <div id="bar"></div>
 <nav id="nav"><b>DTE</b><span><a href="#svc">Services</a><a href="#wk">Work</a><a href="#end">Contact</a></span></nav>
@@ -181,18 +196,9 @@ h2 em{color:var(--amber);font-style:italic}
 <div class="mq"><div id="mqi">✦ Portfolio websites ✦ GitHub profiles ✦ Animated &amp; one of a kind ✦ Designed to Exist ✦ Portfolio websites ✦ GitHub profiles ✦ Animated &amp; one of a kind ✦ Designed to Exist ✦ Portfolio websites ✦ GitHub profiles ✦ Designed to Exist</div></div>
 <div class="mq mq2"><div id="mqi2">✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist ✦ Be seen ✦ Be remembered ✦ Exist</div></div>
 <section class="pin" id="st"><div class="stick">
-<h2 class="sh">Not another template.</h2>
-<p id="stp">We make websites and GitHub profiles that don’t look like anyone else’s, because the people behind them don’t either. <span class="a">Be seen. Be remembered. Exist.</span></p>
-<div class="gl" id="gl"></div>
-<svg class="cat" id="cat" viewBox="0 0 420 485" aria-hidden="true">
-<path class="cp" d="M172 250C250 262 332 322 332 412C332 452 318 481 282 481L148 481C137 481 137 467 141 457C148 402 150 344 172 298"/>
-<path class="cp" d="M118 178L112 120L150 150C162 146 182 146 194 150L232 120L226 178C240 210 222 262 172 264C122 264 104 210 118 178Z"/>
-<path class="cp" d="M326 462C372 466 404 430 394 372C386 326 410 296 394 252C384 226 356 232 362 254"/>
-<path class="cp" d="M172 226L172 234M172 234C165 243 156 241 152 236M172 234C179 243 188 241 192 236M130 224L88 214M130 233L86 234M133 242L92 256M214 224L256 214M214 233L258 234M211 242L252 256"/>
-<g id="ey"><ellipse cx="146" cy="200" rx="8" ry="9"/><ellipse cx="198" cy="200" rx="8" ry="9"/></g>
-<g transform="translate(398 196)"><path id="sp" d="M0-22Q2.5-2.5 22 0Q2.5 2.5 0 22Q-2.5 2.5-22 0Q-2.5-2.5 0-22Z"/></g>
-<path id="vc" d="M0 0L0 17L4.6 13L7.6 20L10.2 18.9L7.2 12L13 12Z"/>
-</svg>
+<div class="stx"><h2 class="sh">Not another template.</h2>
+<p id="stp">We make websites and GitHub profiles that don’t look like anyone else’s, because the people behind them don’t either. <span class="a">Be seen. Be remembered. Exist.</span></p></div>
+<svg class="art" id="cat" viewBox="0 0 560 460" aria-hidden="true"><path class="cp " d="M36 20H524A16 16 0 0 1 540 36V424A16 16 0 0 1 524 440H36A16 16 0 0 1 20 424V36A16 16 0 0 1 36 20Z"/><path class="cp " d="M20 68H540M43 44a5 5 0 1 0 10 0a5 5 0 1 0-10 0M63 44a5 5 0 1 0 10 0a5 5 0 1 0-10 0M83 44a5 5 0 1 0 10 0a5 5 0 1 0-10 0M168 32H392A12 12 0 0 1 404 44A12 12 0 0 1 392 56H168A12 12 0 0 1 156 44A12 12 0 0 1 168 32Z"/><path class="cp " d="M42 104a11 11 0 1 0 22 0a11 11 0 1 0-22 0M360 104H396M416 104H452M472 104H508"/><path class="cp bar" d="M52 164H300M52 196H236"/><path class="cp " d="M52 232H318M52 250H284"/><path class="cp " d="M70 274H154A18 18 0 0 1 172 292A18 18 0 0 1 154 310H70A18 18 0 0 1 52 292A18 18 0 0 1 70 274Z"/><path class="cp " d="M480 214a72 72 0 1 0-144 0a72 72 0 1 0 144 0M464 214a56 56 0 1 0-112 0a56 56 0 1 0 112 0"/><path class="cp " d="M52 352H196V424H52ZM208 352H352V424H208ZM364 352H508V424H364ZM66 372H116M66 388H170M222 372H272M222 388H326M378 372H428M378 388H482"/><rect id="bf" x="52" y="274" width="120" height="36" rx="18"/><g id="sk" transform="translate(508 172)"><path d="M0-20Q2.5-2.5 20 0Q2.5 2.5 0 20Q-2.5 2.5-20 0Q-2.5-2.5 0-20Z"/></g><g id="cu"><path id="rk" d="M-14 2L-34 -6M-4 -12L-8 -34M12 -14L26 -32"/><path id="ca" d="M0 0L0 50L14 40L23 61L34 56L25 36L43 36Z"/></g><circle id="vd" r="4.5"/></svg>
 </div></section>
 <section class="pin" id="svc"><div class="stick">
 <div class="card"><span class="n">01 / SERVICE</span><div><h3>Portfolio<br><em>Websites</em></h3><p style="margin-top:18px">Animated, scroll-driven sites with your story and projects, built around you.</p></div><div class="art"><div class="mk"><i></i><i></i><i></i><div class="bx"></div></div></div><div class="shade"></div></div>
@@ -223,14 +229,17 @@ var cl=function(v){return Math.max(0,Math.min(1,v))};
 function prog(el){var r=el.getBoundingClientRect();return cl(-r.top/(r.height-innerHeight))}
 var sp=$('stp'),words=[];(function(){var out=[];sp.childNodes.forEach(function(n){var cls=n.nodeType==3?'':n.className;n.textContent.split(/\s+/).filter(Boolean).forEach(function(w){var s=document.createElement('span');if(cls)s.className=cls;s.textContent=w+' ';out.push(s)})});sp.innerHTML='';out.forEach(function(s){sp.appendChild(s)});words=out})();
 
-/* ---- a cursor draws the DTE cat ---- */
-var cps=[].slice.call(document.querySelectorAll('.cat .cp')),gl=$('gl'),vc=$('vc'),eys=document.querySelectorAll('#ey ellipse'),spk=$('sp'),
-cw=[[.1,.3],[.3,.5],[.5,.7],[.7,.86]],cL=cps.map(function(e){var l=e.getTotalLength();e.style.strokeDasharray=l;e.style.strokeDashoffset=l;return l});
-function vine(p){var d=cl(p*1.2);gl.style.transform='scaleX('+cl(d/.1)+')';var tip=null;
-cps.forEach(function(e,i){var k=cl((d-cw[i][0])/(cw[i][1]-cw[i][0]));e.style.strokeDashoffset=cL[i]*(1-k);if(k>0&&(k<1||i==cps.length-1||d<cw[i+1][0]))tip=e.getPointAtLength(k*cL[i])});
-if(d>=.7)tip=cps[2].getPointAtLength(cL[2]);
-if(tip){vc.setAttribute('transform','translate('+(tip.x-1)+' '+(tip.y-1)+')');vc.style.opacity=1}else vc.style.opacity=0;
-var ke=cl((d-.88)/.06);eys.forEach(function(e){e.style.transform='scale('+ke+')'});var ks=cl((d-.94)/.06);spk.style.transform='scale('+ks+') rotate('+ks*90+'deg)'}
+/* ---- a website sketches itself, then gets clicked ---- */
+var cps=[].slice.call(document.querySelectorAll('.art .cp')),cL=cps.map(function(e){var l=e.getTotalLength();e.style.strokeDasharray=l;e.style.strokeDashoffset=l;return l}),
+wsum=0,cw=cL.map(function(l){var w=Math.max(l,60);wsum+=w;return w}),acc=0;cw=cw.map(function(w){var a=acc/wsum;acc+=w;return [a*.74,acc/wsum*.74]});
+var rk=$('rk'),rkL=rk.getTotalLength(),vd=$('vd'),cu=$('cu'),bf=$('bf'),sk=$('sk').firstChild?$('sk').querySelector('path'):null;
+rk.style.strokeDasharray=rkL;rk.style.strokeDashoffset=rkL;sk.style.transformBox='fill-box';sk.style.transformOrigin='center';
+function vine(p){var d=cl(p*1.2),tip=null;
+cps.forEach(function(e,i){var k=cl((d-cw[i][0])/(cw[i][1]-cw[i][0]));e.style.strokeDashoffset=cL[i]*(1-k);if(k>0&&k<1)tip=e.getPointAtLength(k*cL[i])});
+if(tip&&d<.74){vd.setAttribute('cx',tip.x);vd.setAttribute('cy',tip.y);vd.style.opacity=1}else vd.style.opacity=0;
+var m=cl((d-.74)/.14),e=1-Math.pow(1-m,3);cu.style.opacity=d>.74?1:0;cu.setAttribute('transform','translate('+(330+(104-330)*e)+' '+(400+(288-400)*e)+')');
+var kc=cl((d-.89)/.04);bf.style.opacity=kc;rk.style.strokeDashoffset=rkL*(1-cl((d-.89)/.05));
+var ks=cl((d-.94)/.06);sk.style.transform='scale('+ks+') rotate('+ks*90+'deg)'}
 /* ---- work: one circular lens, sites swap with a wipe ---- */
 var PJ=[{n:'Marlo Reyes',u:'https://designed-to-exist.netlify.app/',t:'Portfolio · Scroll dive · Sound',d:'Illustrator’s portfolio that you dive through, from sunlit surface to the deep.'},
 {n:'The Night Market of Lost Things',u:'https://night-market-dte.vercel.app/',t:'Experience · Walkable · Sound',d:'Walk through a lantern-lit market by scrolling, swiping or pressing W and S.'},
